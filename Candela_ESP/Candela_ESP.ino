@@ -10,15 +10,13 @@ WiFiUDP port;
 
 char packetBuffer[255];
 unsigned int localPort = 7405;
-IPAddress serverIP(192, 168, 1, 109);
+IPAddress ip(192, 168, 1, 104); 
+IPAddress gateway(192, 168, 1, 1);  
+IPAddress subnet(255, 255, 255, 0);  
 
 int red;
 int green;
 int blue;
-
-void gyroCallback(OSCMessage &msg, int offset) {
-  fade = msg.getFloat(0);
-}
 
 void redCallback(OSCMessage &msg, int offset) {
   red = msg.getInt(0);
@@ -35,6 +33,7 @@ void blueCallback(OSCMessage &msg, int offset) {
 
 void setup() {
   Serial.begin(9600);
+  WiFi.config(ip, gateway, subnet); 
   WiFi.begin("ssid", "password");
   port.begin(localPort);
   strip.Begin();
