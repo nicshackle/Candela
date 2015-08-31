@@ -1,6 +1,6 @@
 # Candela
 
-Wireless LED 'throwie' lights, controllable over OSC. Designed for the `Amaze Hackathon`.
+Wireless LED 'throwie' lights, controllable over OSC. Designed for use in a hackathon.
 
 ##Usage
 
