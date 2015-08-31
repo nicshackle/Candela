@@ -1,6 +1,8 @@
 # Candela
 
-Wireless LED 'throwie' lights, controllable over OSC. Designed for use in a hackathon.
+Wireless RGB LED lights, controllable over OSC. Designed for use in a hackathon.
+
+OSC is implemented over UDP, so can react very quickly (good for real time visaulizations).
 
 ##Usage
 
