@@ -23,6 +23,7 @@ The example processing sketch presents you with a colour picker. On clicking a c
 * Arduino code requires NeoPixelBus and ESP8266WiFi libraries 
 * During the hackthon, you will have use of one unit (or more, depending on turnout). If you would like to make use of many units, you may do so, but will only have the opportunity to during presentation.
 * We will provide a WiFi network to join, on which the units are connected to.
+* I've tried breifly routing OSC through OSCulator, but with little luck. The solution is to write some glue logic in processing - but that's up to you
 
 `good luck, and happy hacking!`
 
